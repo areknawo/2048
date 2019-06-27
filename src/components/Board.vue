@@ -88,7 +88,6 @@ export default class Board extends Vue {
       }
       this.$parent.raycaster.on('pointerdown', mesh, () => {
         this.manager.updateTiles(i);
-        this.$forceUpdate();
       });
       this.object3D.add(mesh);
     }
@@ -96,7 +95,6 @@ export default class Board extends Vue {
 
   private startGame() {
     this.manager.resetTiles();
-    this.$forceUpdate();
   }
 
   private endGame() {

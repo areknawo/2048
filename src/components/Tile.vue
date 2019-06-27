@@ -15,7 +15,7 @@ import { numMaterial, tileMaterial } from '../materials';
     this.$nextTick(() => {
       const position = this.getPosition();
       this.$parent.object3D.add(this.object3D);
-      this.object3D.scale.setScalar(0);
+      this.object3D.scale.setScalar(1e-5);
       this.object3D.position.y = 0.2;
       this.object3D.position.x = position.x;
       this.object3D.position.z = position.y;
@@ -47,9 +47,9 @@ import { numMaterial, tileMaterial } from '../materials';
           this.$parent.object3D.remove(this.object3D);
           this.animation = undefined;
         },
-        x: 0,
-        y: 0,
-        z: 0,
+        x: 1e-5,
+        y: 1e-5,
+        z: 1e-5,
       });
     });
   },
