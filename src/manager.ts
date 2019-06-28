@@ -100,7 +100,6 @@ export default class TileManager {
       tile.merged = false;
     });
     this.moveTiles(direction);
-    console.log(this.grid.hasChanged());
     if (this.grid.hasChanged()) this.generateTile();
   }
 
