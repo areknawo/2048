@@ -40,7 +40,7 @@ enum Edge {
 })
 export default class Board extends Vue {
   @Prop({ type: Number, default: 4 })
-  private size: number = 4;
+  private size!: number;
 
   private manager = new BoardManager(this.size);
 
