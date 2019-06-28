@@ -110,6 +110,3 @@ export default class Board extends Vue {
   }
 }
 </script>
-
-<style>
-</style>

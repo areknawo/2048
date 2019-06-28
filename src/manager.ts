@@ -7,7 +7,7 @@ enum Direction {
   'left',
 }
 
-export default class TileManager {
+export default class BoardManager {
   private size: number;
 
   private grid: Grid;
