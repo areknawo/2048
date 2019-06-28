@@ -26,6 +26,7 @@ export function generateNumGeometry(num: number) {
     })
       .center()
       .rotateX(Math.PI / 2)
+      .rotateY(Math.PI)
       .rotateZ(Math.PI);
   }
   return cache[num];
